@@ -7,6 +7,46 @@
     font-weight: 200;
 }
 
+/* Importar la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Aplicar la fuente a todas las etiquetas */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+nav a {
+    text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Agrega el subrayado al pasar el mouse */
+    cursor: crosshair; /*cambia la forma del cursor*/
+}
+
+li {
+    list-style: none; /* Elimina las viñetas */
+    padding: 0; /* Opcional: elimina el padding por defecto */
+    margin: 0; /* Opcional: elimina el margin por defecto */
+}
+
+footer ul {
+    list-style: none; /* Elimina las viñetas, opcional */
+    padding: 0; /* Elimina el padding, opcional */
+    margin: 0; /* Elimina el margin, opcional */
+    text-align: center; /* Centra el texto dentro de la lista */
+}
+
+footer ul li {
+    display: inline-block; /* Alinea los elementos de la lista en línea */
+    margin: 0 10px; /* Espaciado entre los elementos, opcional */
+}
+
+
 h1 {
     /* Alineación del texto */
     text-align: center;
