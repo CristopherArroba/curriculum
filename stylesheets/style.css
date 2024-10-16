@@ -137,34 +137,30 @@ section form {
 
 #resumen {
 
-    /* Modelo de diseño flexible */
-  display: flex;
+    /* Modelo de diseño en cuadrícula */
+  display: grid;
 
   /* Distribuye el espacio entre y alrededor
-     de los items en el eje principal */
-  justify-content: space-evenly;
+             de los items en el eje principal */
+    justify-content: space-around;
 
+    /* Alineación de un elemento dentro del bloque
+        que lo contiene, considerando el eje transversal */
+    align-items: stretch;
 
-  /* Alinea los elementos al centro dentro
-     del bloque respecto con el eje transversal */
-  align-items: center;
-
-  /* Eje principal: por columna */
-  flex-direction: column;
-
-  /* Altura de 24% del área de visualización */
-  height: 24vh;
-
-  /* Apilamiento de elementos: ajustado 
-  hasta ocupar el máximo */
-  flex-wrap: wrap; 
-
+    /* Plantilla con áreas en la cuadrícula */
+    grid-template-areas: "A D" 
+                         "B D";
 }
 
-#resumen h2, #resumen p {
-  width: 50%;
+#resumen h2 {
+  grid-area: A;
+}
+
+#resumen p {
+  grid-area: B;
 }
 
 #resumen img {
-    max-width: 50%;
+  grid-area: D;
 }
