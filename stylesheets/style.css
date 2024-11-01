@@ -17,152 +17,160 @@ body {
     align-items: center;
 }
 
-a {
-    text-decoration: none; /* Elimina el subrayado */
-}
-
-nav a {
-    text-decoration: none; /* Elimina el subrayado por defecto */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Agrega el subrayado al pasar el mouse */
-    cursor: crosshair; /*cambia la forma del cursor*/
-}
-
-li {
-    list-style: none; /* Elimina las viñetas */
-    padding: 0; /* Opcional: elimina el padding por defecto */
-    margin: 0; /* Opcional: elimina el margin por defecto */
-}
-
-footer ul {
-    list-style: none; /* Elimina las viñetas, opcional */
-    padding: 0; /* Elimina el padding, opcional */
-    margin: 0; /* Elimina el margin, opcional */
-    text-align: center; /* Centra el texto dentro de la lista */
-}
-
-footer ul li {
-    display: inline-block; /* Alinea los elementos de la lista en línea */
-    margin: 0 10px; /* Espaciado entre los elementos, opcional */
-}
-
-
-h1 {
-    /* Alineación del texto */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
     text-align: center;
-
-    /* Grosor de la fuente negrita */
-    font-weight: bold;
-    color: red;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#photo {
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
 
-    /* Ancho del elemento */
+.square-img {
     width: 200px;
-
-    /* Alto del elemento */
-    height: auto;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #4CAF50;
 }
 
-.subtitle {
-
-    /* Color del texto en rgba */
-    color: rgb(107 114 128 / 0.89);
-
-    /* Transformación del texto a mayúsculas */
-    text-transform: uppercase;
-}
-
-section {
-
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
-    margin: 4px 2px 8px 2px;
-
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-    border: 0.2pt solid #cedddd;
-    /*dash: lineas entrecortadas, punta
- 
-    /* relleno (espacio interno) de 
-    1.5% en la parte superior e inferior y 
-    0.8% a los lados derecho e izquierdo. */
-
-    padding: 1.5% 0.8%;
-
-    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
-    dándoles un valor específico de 1.2% para esos lados. */
-
-    padding-left: 1.2%;
-    padding-right: 1.2%;
-
-
-
-    /* borde redondeado con un radio de 5 píxeles */
-
-    /* en navegadores basados en WebKit, 
-   como versiones antiguas de Safari y Chrome. */
-    -webkit-border-radius: 5px;
-
-    /* en navegadores antiguos de Mozilla, 
-   como Firefox.  */
-    -moz-border-radius: 5px;
-
-    /* en navegadores modernos. */
-    border-radius: 5px;
-
-
-    /* sombra a un elemento */
-    -webkit-box-shadow: 7px 7px 3px 1px rgba(107, 79, 107, 0.48);
-    -moz-box-shadow: 7px 7px 3px 1px rgba(107, 79, 107, 0.48);
-    box-shadow: 7px 7px 3px 1px rgba(107, 79, 107, 0.48);
-
+nav {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 nav ul {
-
-    /* Modelo de diseño flexiblee */
-    display: flex;									
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-   
+    background-color: #333;
+    padding: 20px;
+    list-style-type: none;
 }
 
-section form {
+nav ul li {
+    list-style: none;
+}
 
-    /* Modelo de diseño en cuadrícula */
-    display: grid;									
-    row-gap: 0.5rem;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+    cursor: zoom-in;
+}
 
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+}
+
+h2 {
+    font-family: "Henny Penny";
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+}
+
+.objetivo-profesional-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.objetivo-profesional-content .video {
+    flex: 0 0 400px;
+}
+
+.objetivo-profesional-content iframe {
+    width: 100%;
+    height: auto;
+}
+
+.objetivo-profesional-content figcaption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
-#resumen {
+#miDiv {
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-    /* Modelo de diseño en cuadrícula */
-  display: grid;
+#miniDiv {
+    margin: 2px 1px 1.5px;
+    margin-top: 0.8rem;
+    border: 0.2pt dashed #827d7d;
+    padding: 2% 1.2%;
+    background-color: rgb(213, 255, 241);
+    border-radius: 10px;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
-  /* Distribuye el espacio entre y alrededor
-             de los items en el eje principal */
+#miniDiv>.titulo {
+    color: blue;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.social-links {
+    display: flex;
     justify-content: space-around;
-
-    /* Alineación de un elemento dentro del bloque
-        que lo contiene, considerando el eje transversal */
-    align-items: stretch;
-
-    /* Plantilla con áreas en la cuadrícula */
-    grid-template-areas: "A D" 
-                         "B D";
 }
 
-#resumen h2 {
-  grid-area: A;
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: text-decoration 0.3s;
 }
 
-#resumen p {
-  grid-area: B;
-}
-
-#resumen img {
-  grid-area: D;
+social-links a:hover {
+    text-decoration: underline;
 }
